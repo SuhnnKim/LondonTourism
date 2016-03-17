@@ -16,6 +16,7 @@ class ShopTableViewCell: UITableViewCell {
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     
+    var list = [Category]()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,5 +28,32 @@ class ShopTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func loadList(listOf: String) -> [Category] {
+        
+        if listOf=="Shop"{
+            let photo1 = UIImage(named: "urbanoutfitters")!
+            let shop1 = Shop(name: "Urban Outfitters", photo: photo1, address: "Eaton center", phone: "123-456", type: "Clothing")
+        
+            let photo2 = UIImage(named: "covent")!
+            let shop2 = Shop(name: "Covent Garden Market", photo: photo2, address: "130 King St., London ON", phone: "(519) 123-4567", type: "Shopping Centre, Market")
+            
+            list = [shop1!, shop2!]
+            return list
+
+        }else if listOf=="Eat"{
+            let photo1 = UIImage(named: "molly")!
+            let eat1 = Eat(name: "Molly Bloom's", photo: photo1, address: "700 Richmond St. London ON", phone: "(519) 675-1212", type: "Pub")
+            
+            let photo2 = UIImage(named: "earlybird")!
+            let eat2 = Eat(name: "The Early Bird Cafe", photo: photo2, address: "355 Talbot St. London ON", phone: "(519) 439-6483", type: "Cafe, Brunch")
+            
+            list = [eat1!, eat2!]
+            return list
+        }
+        
+        
+    }
+
 
 }
