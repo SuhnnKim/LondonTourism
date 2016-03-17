@@ -9,6 +9,7 @@
 import UIKit
 
 class ShopTableViewController: UITableViewController {
+    @IBOutlet weak var navView: UIView!
 
     var shops = [Shop]()
     
@@ -21,8 +22,16 @@ class ShopTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
+        // nav image
+        let navImage:UIImage = UIImage(named: "banner.jpg")!
+        let navImageView:UIImageView = UIImageView(image: navImage)
+        navView.addSubview(navImageView)
+        
         // Load the sample data
         loadSampleShops()
+        
+        //let id = self.restorationIdentifier!
+        
     }
     
     func loadSampleShops(){

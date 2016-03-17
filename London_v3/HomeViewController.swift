@@ -9,11 +9,23 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
+    @IBOutlet weak var navView: UIView!
+    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var eatView: UIView!
+    @IBOutlet weak var shopView: UIView!
+    @IBOutlet weak var stayView: UIView!
+    @IBOutlet weak var exploreView: UIView!
+    @IBOutlet weak var eventsView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // nav logo and image
+        let navImage:UIImage = UIImage(named: "banner.jpg")!
+        let navImageView:UIImageView = UIImageView(image: navImage)
+        navView.addSubview(navImageView)
+        navView.addSubview(logoImageView)
     }
 
     override func didReceiveMemoryWarning() {

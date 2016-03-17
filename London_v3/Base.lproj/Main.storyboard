@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="eX0-jP-xBC">
             <objects>
-                <viewController id="rI6-sT-lN0" sceneMemberID="viewController">
+                <viewController title="Home" id="rI6-sT-lN0" customClass="HomeViewController" customModule="London_v3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SGD-QN-bBS"/>
                         <viewControllerLayoutGuide type="bottom" id="F2h-Ja-met"/>
@@ -34,15 +34,15 @@
                             </stackView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WwV-pW-reu">
                                 <rect key="frame" x="0.0" y="125" width="375" height="95"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J2n-lM-Zhd">
                                 <rect key="frame" x="0.0" y="220" width="375" height="95"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gXS-y6-Tye">
                                 <rect key="frame" x="0.0" y="314" width="375" height="95"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.16078431369999999" green="0.50196078430000002" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WFh-qB-YUm">
                                 <rect key="frame" x="0.0" y="407" width="375" height="95"/>
@@ -56,22 +56,35 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="eatView" destination="WwV-pW-reu" id="1BD-T2-We6"/>
+                        <outlet property="eventsView" destination="dLv-DN-Fr5" id="YlV-Dk-dYO"/>
+                        <outlet property="exploreView" destination="WFh-qB-YUm" id="1Li-4H-Tb8"/>
+                        <outlet property="logoImageView" destination="vQ3-Mw-jWA" id="APT-x0-bEv"/>
+                        <outlet property="navView" destination="g1j-d1-xRp" id="d6d-Nb-lNW"/>
+                        <outlet property="shopView" destination="J2n-lM-Zhd" id="bQC-rR-Brr"/>
+                        <outlet property="stayView" destination="gXS-y6-Tye" id="wGi-yX-0TA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Djb-vv-1nP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-486.5" y="-219.5"/>
         </scene>
-        <!--Shop Table View Controller-->
+        <!--Shop-->
         <scene sceneID="Eg2-eJ-gWY">
             <objects>
-                <tableViewController id="ytA-0d-1I4" customClass="ShopTableViewController" customModule="London_v3" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Shop" id="ytA-0d-1I4" customClass="ShopTableViewController" customModule="London_v3" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="bFg-nc-m45">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Qvb-sq-tDW">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ShopTableViewCell" rowHeight="90" id="XgS-65-b22" customClass="ShopTableViewCell" customModule="London_v3" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="90"/>
+                                <rect key="frame" x="0.0" y="153" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XgS-65-b22" id="zGk-tH-eA3">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
@@ -125,29 +138,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="jXH-oE-8QS"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="navView" destination="Qvb-sq-tDW" id="Nww-Mr-PBz"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jKN-XD-CDR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="424.5" y="-219.5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="A9O-LZ-bKl">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lVf-pj-l9k" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nce-X9-BWl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="ytA-0d-1I4" kind="relationship" relationship="rootViewController" id="9mb-S1-fHc"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="emd-zH-0hk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-57" y="-220"/>
+            <point key="canvasLocation" x="150.5" y="-219.5"/>
         </scene>
     </scenes>
     <resources>
