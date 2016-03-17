@@ -15,6 +15,10 @@
 		0A8076351C99081D0034AEC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8076331C99081D0034AEC2 /* LaunchScreen.storyboard */; };
 		0A8076401C99081D0034AEC2 /* London_v3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80763F1C99081D0034AEC2 /* London_v3Tests.swift */; };
 		0A80764B1C99081D0034AEC2 /* London_v3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80764A1C99081D0034AEC2 /* London_v3UITests.swift */; };
+		0A80765D1C9A0E6C0034AEC2 /* ShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80765C1C9A0E6C0034AEC2 /* ShopTableViewCell.swift */; };
+		0A8076671C9A42C30034AEC2 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8076661C9A42C30034AEC2 /* Shop.swift */; };
+		0A80766B1C9A47DA0034AEC2 /* ShopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80766A1C9A47DA0034AEC2 /* ShopTableViewController.swift */; };
+		0AE7CB0F1C9B2C080068C9BB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7CB0E1C9B2C080068C9BB /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		0A8076461C99081D0034AEC2 /* London_v3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = London_v3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A80764A1C99081D0034AEC2 /* London_v3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = London_v3UITests.swift; sourceTree = "<group>"; };
 		0A80764C1C99081D0034AEC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A80765C1C9A0E6C0034AEC2 /* ShopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShopTableViewCell.swift; path = ../ShopTableViewCell.swift; sourceTree = "<group>"; };
+		0A8076661C9A42C30034AEC2 /* Shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		0A80766A1C9A47DA0034AEC2 /* ShopTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShopTableViewController.swift; path = ../ShopTableViewController.swift; sourceTree = "<group>"; };
+		0AE7CB0E1C9B2C080068C9BB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,10 @@
 			children = (
 				0A8076271C99081D0034AEC2 /* AppDelegate.swift */,
 				0A8076291C99081D0034AEC2 /* ViewController.swift */,
+				0A80766A1C9A47DA0034AEC2 /* ShopTableViewController.swift */,
+				0A8076661C9A42C30034AEC2 /* Shop.swift */,
+				0A80765C1C9A0E6C0034AEC2 /* ShopTableViewCell.swift */,
+				0AE7CB0E1C9B2C080068C9BB /* HomeViewController.swift */,
 				0A80762B1C99081D0034AEC2 /* Main.storyboard */,
 				0A8076311C99081D0034AEC2 /* Assets.xcassets */,
 				0A8076331C99081D0034AEC2 /* LaunchScreen.storyboard */,
@@ -261,7 +273,11 @@
 			files = (
 				0A8076301C99081D0034AEC2 /* London_v3.xcdatamodeld in Sources */,
 				0A80762A1C99081D0034AEC2 /* ViewController.swift in Sources */,
+				0A8076671C9A42C30034AEC2 /* Shop.swift in Sources */,
 				0A8076281C99081D0034AEC2 /* AppDelegate.swift in Sources */,
+				0A80765D1C9A0E6C0034AEC2 /* ShopTableViewCell.swift in Sources */,
+				0AE7CB0F1C9B2C080068C9BB /* HomeViewController.swift in Sources */,
+				0A80766B1C9A47DA0034AEC2 /* ShopTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +502,7 @@
 				0A8076511C99081D0034AEC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A8076521C99081D0034AEC2 /* Build configuration list for PBXNativeTarget "London_v3Tests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +511,7 @@
 				0A8076541C99081D0034AEC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A8076551C99081D0034AEC2 /* Build configuration list for PBXNativeTarget "London_v3UITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +520,7 @@
 				0A8076571C99081D0034AEC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
