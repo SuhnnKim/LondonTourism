@@ -1,5 +1,5 @@
 //
-//  StayViewController.swift
+//  EatViewController.swift
 //  London_v3
 //
 //  Created by KimSuhn Mi on 2016-03-20.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class StayViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class EatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var navView: UIView!
     @IBOutlet weak var tableView: UITableView!
-
+    
     var list = [Category]()
     var shopCellCtl:ShopTableViewCell = ShopTableViewCell()
     
@@ -28,7 +28,7 @@ class StayViewController: UIViewController, UITableViewDelegate, UITableViewData
         let viewIdentifier = self.restorationIdentifier!
         
         // Load the sample data
-        list = shopCellCtl.loadList(viewIdentifier)        
+        list = shopCellCtl.loadList(viewIdentifier)
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,25 +48,23 @@ class StayViewController: UIViewController, UITableViewDelegate, UITableViewData
         return list.count
     }
     
-    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cellIdentifier = "ShopTableViewCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! ShopTableViewCell
         
         // Fetches the appropriate meal for the data source layout
-        let stay = list[indexPath.row]
+        let eat = list[indexPath.row]
         
-        cell.nameLabel.text = stay.name
-        cell.shopImageView.image = stay.photo
-        cell.addressLabel.text = stay.address
-        cell.phoneLabel.text = stay.phone
-        cell.typeLabel.text = stay.type
+        cell.nameLabel.text = eat.name
+        cell.shopImageView.image = eat.photo
+        cell.addressLabel.text = eat.address
+        cell.phoneLabel.text = eat.phone
+        cell.typeLabel.text = eat.type
         
         
         return cell
     }
-    
     
 
     /*

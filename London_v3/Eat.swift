@@ -10,12 +10,9 @@ import UIKit
 
 class Eat : Category {
     
-    // Properties
-    var type: String
     
     // Initialization
-    init?(name: String, photo: UIImage?, address: String, phone: String, type:String){
-        self.type = type
+    init?(name: String, photo: UIImage?, address: String, phone: String, type:String){    
         super.init(name: name, photo: photo, address: address, phone: phone)
         
         if name.isEmpty {

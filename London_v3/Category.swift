@@ -15,6 +15,7 @@ class Category {
     var photo: UIImage?
     var address: String
     var phone: String
+    var type: String?
     
     // Initialization
     init?(name: String, photo: UIImage?, address: String, phone: String){
