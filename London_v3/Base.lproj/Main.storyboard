@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ytA-0d-1I4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cdB-5G-eqX">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -55,6 +55,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="HOME" image="home" id="RQ4-Cb-pNR"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="eatView" destination="WwV-pW-reu" id="1BD-T2-We6"/>
@@ -68,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Djb-vv-1nP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-486.5" y="-219.5"/>
+            <point key="canvasLocation" x="325.5" y="-219.5"/>
         </scene>
         <!--Shop-->
         <scene sceneID="Eg2-eJ-gWY">
@@ -144,7 +145,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jKN-XD-CDR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="150.5" y="-219.5"/>
+            <point key="canvasLocation" x="962.5" y="-219.5"/>
         </scene>
         <!--Eat-->
         <scene sceneID="nLR-2Z-M1K">
@@ -206,11 +207,96 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XLg-OZ-KW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="622.5" y="-219.5"/>
+            <point key="canvasLocation" x="1434.5" y="-219.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Kig-C5-ghZ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="cdB-5G-eqX" customClass="TabBarController" customModule="London_v3" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="55v-2E-bSv">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="rI6-sT-lN0" kind="relationship" relationship="viewControllers" id="za3-GX-3O2"/>
+                        <segue destination="MYS-z3-mKz" kind="relationship" relationship="viewControllers" id="qBg-F0-bur"/>
+                        <segue destination="pAo-zc-Jde" kind="relationship" relationship="viewControllers" id="CL4-sV-wdf"/>
+                        <segue destination="dMT-Ln-hk8" kind="relationship" relationship="viewControllers" id="pxG-O1-Kes"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mFU-pE-u1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-374" y="-220"/>
+        </scene>
+        <!--MY LIST-->
+        <scene sceneID="rYj-DP-DUr">
+            <objects>
+                <viewController id="MYS-z3-mKz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OgS-n6-yJq"/>
+                        <viewControllerLayoutGuide type="bottom" id="K0S-lu-Vw1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CMv-XG-Fa8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MY LIST" image="mylist" id="kJ9-Q6-FrM"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6hU-98-RtQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-656.5" y="592.5"/>
+        </scene>
+        <!--SEARCH-->
+        <scene sceneID="z9M-Rf-xM8">
+            <objects>
+                <viewController id="pAo-zc-Jde" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pC3-Jo-QXG"/>
+                        <viewControllerLayoutGuide type="bottom" id="i6i-if-75t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Yd-ly-wJh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="SEARCH" image="search" id="ndt-FA-ppX"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Vv-lh-ahA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-166.5" y="592.5"/>
+        </scene>
+        <!--TRAVEL INFO-->
+        <scene sceneID="bwD-lI-nY9">
+            <objects>
+                <viewController id="dMT-Ln-hk8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="33U-08-uNw"/>
+                        <viewControllerLayoutGuide type="bottom" id="qcb-gx-weQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mZ2-eY-3La">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="TRAVEL INFO" image="travelinfo" id="o2S-xb-jeg"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oeG-Nz-Seq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333.5" y="592.5"/>
         </scene>
     </scenes>
     <resources>
+        <image name="home" width="30" height="30"/>
         <image name="logo_RAW" width="512" height="512"/>
+        <image name="mylist" width="30" height="30"/>
+        <image name="search" width="30" height="30"/>
         <image name="topgun" width="61" height="62"/>
+        <image name="travelinfo" width="30" height="30"/>
     </resources>
 </document>
