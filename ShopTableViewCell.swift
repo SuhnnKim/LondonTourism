@@ -57,6 +57,15 @@ class ShopTableViewCell: UITableViewCell {
             
             list = [eat1!, eat2!]
 
+        }else if listOf=="Stay"{
+            let photo1 = UIImage(named: "molly")!
+            let stay1 = Stay(name: "Paul's Inn", photo: photo1, address: "Somewhere cozy", phone: "123-456", type: "Cheap stay")
+            
+            let photo2 = UIImage(named: "covent")!
+            let stay2 = Stay(name: "Mariott", photo: photo2, address: "Somewhere luxurious", phone: "(519) 123-4567", type: "Expensive hotel")
+            
+            list = [stay1!, stay2!]
+            
         }
         return list
         

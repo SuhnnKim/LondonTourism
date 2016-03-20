@@ -12,7 +12,9 @@ class StayViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var navView: UIView!
     @IBOutlet weak var tableView: UITableView!
-    //var list = [Category]()
+
+    var list = [Category]()
+    var shopCellCtl:ShopTableViewCell = ShopTableViewCell()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +24,11 @@ class StayViewController: UIViewController, UITableViewDelegate, UITableViewData
         let navImageView:UIImageView = UIImageView(image: navImage)
         navView.addSubview(navImageView)
         
-        // datasource, delegate
-//        tableView.dataSource = self
-//        tableView.delegate = self
+        // Get the view identifier
+        let viewIdentifier = self.restorationIdentifier!
+        
+        // Load the sample data
+        list = shopCellCtl.loadList(viewIdentifier)        
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,7 +45,7 @@ class StayViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 1
+        return list.count
     }
     
     
@@ -51,12 +55,12 @@ class StayViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! ShopTableViewCell
         
         // Fetches the appropriate meal for the data source layout
-        //let store = list[indexPath.row]
+        let stay = list[indexPath.row]
         
-        cell.nameLabel.text = "Paul's inn"
-        cell.shopImageView.image = UIImage(named: "molly")
-        cell.addressLabel.text = "Joe shuster"
-        cell.phoneLabel.text = "1234"
+        cell.nameLabel.text = stay.name
+        cell.shopImageView.image = stay.photo
+        cell.addressLabel.text = stay.address
+        cell.phoneLabel.text = stay.phone
         //cell.typeLabel.text = (Shop)store.type?
         
         
