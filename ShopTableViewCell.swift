@@ -18,6 +18,14 @@ class ShopTableViewCell: UITableViewCell {
     
     var list = [Category]()
     
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?){
+        super.init(style:style, reuseIdentifier: reuseIdentifier)
+    }
+    
+    required init?(coder decoder:NSCoder){
+        super.init(coder: decoder)
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -39,7 +47,6 @@ class ShopTableViewCell: UITableViewCell {
             let shop2 = Shop(name: "Covent Garden Market", photo: photo2, address: "130 King St., London ON", phone: "(519) 123-4567", type: "Shopping Centre, Market")
             
             list = [shop1!, shop2!]
-            return list
 
         }else if listOf=="Eat"{
             let photo1 = UIImage(named: "molly")!
@@ -49,9 +56,9 @@ class ShopTableViewCell: UITableViewCell {
             let eat2 = Eat(name: "The Early Bird Cafe", photo: photo2, address: "355 Talbot St. London ON", phone: "(519) 439-6483", type: "Cafe, Brunch")
             
             list = [eat1!, eat2!]
-            return list
+
         }
-        
+        return list
         
     }
 

@@ -14,9 +14,9 @@ class Shop : Category {
     var type: String
     
     // Initialization
-    override init?(name: String, photo: UIImage?, address: String, phone: String, type:String){
-        super.init(name: name, photo: photo, address: address, phone: phone)
+    init?(name: String, photo: UIImage?, address: String, phone: String, type:String){
         self.type = type
+        super.init(name: name, photo: photo, address: address, phone: phone)        
         
         if name.isEmpty {
             return nil

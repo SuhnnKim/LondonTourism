@@ -13,9 +13,10 @@ class MainTableViewController: UITableViewController {
     @IBOutlet weak var navView: UIView!
 
     var list = [Category]()
-    var shopCellCtl : ShopTableViewCell
+    //weak var shopCellCtl : ShopTableViewCell!
+    var shopCellCtl:ShopTableViewCell = ShopTableViewCell()
     
-    var viewIdentifier: String
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,10 +30,10 @@ class MainTableViewController: UITableViewController {
         // nav image
         let navImage:UIImage = UIImage(named: "banner.jpg")!
         let navImageView:UIImageView = UIImageView(image: navImage)
-        navView.addSubview(navImageView)
+        //navView.addSubview(navImageView)
         
         // Get the view identifier
-        viewIdentifier = self.restorationIdentifier!
+        let viewIdentifier = self.restorationIdentifier!
         
         // Load the sample data
         list = shopCellCtl.loadList(viewIdentifier)
@@ -53,7 +54,7 @@ class MainTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return 0 // change this then ...
+        return list.count
     }
 
     
