@@ -209,10 +209,10 @@
                                 <rect key="frame" x="0.0" y="124" width="375" height="466"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ShopTableViewCell" rowHeight="90" id="rfY-VN-a1Z" customClass="ShopTableViewCell" customModule="London_v3" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="StayTableViewCell" rowHeight="90" id="rfY-VN-a1Z" customClass="StayTableViewCell" customModule="London_v3" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rfY-VN-a1Z" id="VUJ-jB-V9Z">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="Stay" tableViewCell="rfY-VN-a1Z" id="VUJ-jB-V9Z">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -249,11 +249,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="addressLabel" destination="mRk-0F-dfv" id="rNU-St-gc2"/>
-                                            <outlet property="nameLabel" destination="SA6-I7-Vup" id="aoa-BR-aIe"/>
-                                            <outlet property="phoneLabel" destination="MYA-xh-Org" id="V1y-dc-2rs"/>
-                                            <outlet property="shopImageView" destination="6HK-R5-7YJ" id="9H0-Mj-193"/>
-                                            <outlet property="typeLabel" destination="80e-b2-cvD" id="fNl-VZ-kkb"/>
+                                            <outlet property="addressLabel" destination="mRk-0F-dfv" id="43n-Ll-Tdd"/>
+                                            <outlet property="nameLabel" destination="SA6-I7-Vup" id="6vx-du-0DF"/>
+                                            <outlet property="phoneLabel" destination="MYA-xh-Org" id="Av7-aB-Hgr"/>
+                                            <outlet property="shopImageView" destination="6HK-R5-7YJ" id="p6A-si-3O2"/>
+                                            <outlet property="typeLabel" destination="80e-b2-cvD" id="a8g-Oh-Z7z"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -267,6 +267,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="navView" destination="Y2Z-Su-nXg" id="SS4-hI-GZk"/>
+                        <outlet property="tableView" destination="aRQ-BR-onv" id="BhB-5V-U6r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F3u-A3-79J" userLabel="First Responder" sceneMemberID="firstResponder"/>

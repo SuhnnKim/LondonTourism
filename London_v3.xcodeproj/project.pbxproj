@@ -22,6 +22,7 @@
 		0AA29E521C9F286E00194866 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA29E511C9F286E00194866 /* UIColor.swift */; };
 		0AA29E541C9F2EC000194866 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA29E531C9F2EC000194866 /* NavigationController.swift */; };
 		0AA29E5E1C9F3B5F00194866 /* StayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA29E5D1C9F3B5F00194866 /* StayViewController.swift */; };
+		0AA29E601C9F3CB000194866 /* StayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA29E5F1C9F3CB000194866 /* StayTableViewCell.swift */; };
 		0AE7CB0F1C9B2C080068C9BB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7CB0E1C9B2C080068C9BB /* HomeViewController.swift */; };
 		0AE7CB111C9B44490068C9BB /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7CB101C9B44490068C9BB /* MainTableViewController.swift */; };
 		0AE7CB151C9B4B6C0068C9BB /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7CB141C9B4B6C0068C9BB /* Category.swift */; };
@@ -67,6 +68,7 @@
 		0AA29E511C9F286E00194866 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		0AA29E531C9F2EC000194866 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		0AA29E5D1C9F3B5F00194866 /* StayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StayViewController.swift; sourceTree = "<group>"; };
+		0AA29E5F1C9F3CB000194866 /* StayTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StayTableViewCell.swift; sourceTree = "<group>"; };
 		0AE7CB0E1C9B2C080068C9BB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0AE7CB101C9B44490068C9BB /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		0AE7CB141C9B4B6C0068C9BB /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				0AA29E511C9F286E00194866 /* UIColor.swift */,
 				0AA29E531C9F2EC000194866 /* NavigationController.swift */,
 				0AA29E5D1C9F3B5F00194866 /* StayViewController.swift */,
+				0AA29E5F1C9F3CB000194866 /* StayTableViewCell.swift */,
 				0A80762B1C99081D0034AEC2 /* Main.storyboard */,
 				0A8076311C99081D0034AEC2 /* Assets.xcassets */,
 				0A8076331C99081D0034AEC2 /* LaunchScreen.storyboard */,
@@ -300,6 +303,7 @@
 				0A8076671C9A42C30034AEC2 /* Shop.swift in Sources */,
 				0A8076281C99081D0034AEC2 /* AppDelegate.swift in Sources */,
 				0AE7CB111C9B44490068C9BB /* MainTableViewController.swift in Sources */,
+				0AA29E601C9F3CB000194866 /* StayTableViewCell.swift in Sources */,
 				0AA29E541C9F2EC000194866 /* NavigationController.swift in Sources */,
 				0A80765D1C9A0E6C0034AEC2 /* ShopTableViewCell.swift in Sources */,
 				0AE7CB171C9B4F0B0068C9BB /* Eat.swift in Sources */,
