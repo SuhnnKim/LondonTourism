@@ -23,8 +23,8 @@
 		0AA29E641C9F5D2900194866 /* StayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA29E631C9F5D2900194866 /* StayViewController.swift */; };
 		0AA29E661C9F694A00194866 /* Stay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA29E651C9F694A00194866 /* Stay.swift */; };
 		0AA29E681C9F6CD200194866 /* EatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA29E671C9F6CD200194866 /* EatViewController.swift */; };
+		0AA29E6A1C9F6F2000194866 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA29E691C9F6F2000194866 /* ShopViewController.swift */; };
 		0AE7CB0F1C9B2C080068C9BB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7CB0E1C9B2C080068C9BB /* HomeViewController.swift */; };
-		0AE7CB111C9B44490068C9BB /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7CB101C9B44490068C9BB /* MainTableViewController.swift */; };
 		0AE7CB151C9B4B6C0068C9BB /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7CB141C9B4B6C0068C9BB /* Category.swift */; };
 		0AE7CB171C9B4F0B0068C9BB /* Eat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7CB161C9B4F0B0068C9BB /* Eat.swift */; };
 /* End PBXBuildFile section */
@@ -69,8 +69,8 @@
 		0AA29E631C9F5D2900194866 /* StayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StayViewController.swift; sourceTree = "<group>"; };
 		0AA29E651C9F694A00194866 /* Stay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stay.swift; sourceTree = "<group>"; };
 		0AA29E671C9F6CD200194866 /* EatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatViewController.swift; sourceTree = "<group>"; };
+		0AA29E691C9F6F2000194866 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		0AE7CB0E1C9B2C080068C9BB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		0AE7CB101C9B44490068C9BB /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		0AE7CB141C9B4B6C0068C9BB /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		0AE7CB161C9B4F0B0068C9BB /* Eat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,8 +131,8 @@
 				0AA29E651C9F694A00194866 /* Stay.swift */,
 				0AE7CB0E1C9B2C080068C9BB /* HomeViewController.swift */,
 				0AA29E4F1C9F1FFA00194866 /* TabBarController.swift */,
-				0AE7CB101C9B44490068C9BB /* MainTableViewController.swift */,
 				0AA29E631C9F5D2900194866 /* StayViewController.swift */,
+				0AA29E691C9F6F2000194866 /* ShopViewController.swift */,
 				0AA29E671C9F6CD200194866 /* EatViewController.swift */,
 				0A80765C1C9A0E6C0034AEC2 /* ShopTableViewCell.swift */,
 				0AA29E511C9F286E00194866 /* UIColor.swift */,
@@ -303,10 +303,10 @@
 				0A80762A1C99081D0034AEC2 /* ViewController.swift in Sources */,
 				0A8076671C9A42C30034AEC2 /* Shop.swift in Sources */,
 				0A8076281C99081D0034AEC2 /* AppDelegate.swift in Sources */,
-				0AE7CB111C9B44490068C9BB /* MainTableViewController.swift in Sources */,
 				0AA29E541C9F2EC000194866 /* NavigationController.swift in Sources */,
 				0A80765D1C9A0E6C0034AEC2 /* ShopTableViewCell.swift in Sources */,
 				0AA29E681C9F6CD200194866 /* EatViewController.swift in Sources */,
+				0AA29E6A1C9F6F2000194866 /* ShopViewController.swift in Sources */,
 				0AE7CB171C9B4F0B0068C9BB /* Eat.swift in Sources */,
 				0AE7CB0F1C9B2C080068C9BB /* HomeViewController.swift in Sources */,
 				0AA29E641C9F5D2900194866 /* StayViewController.swift in Sources */,
