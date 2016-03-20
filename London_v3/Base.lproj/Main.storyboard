@@ -32,23 +32,66 @@
                                     </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WwV-pW-reu">
                                         <rect key="frame" x="0.0" y="125" width="375" height="95"/>
-                                        <color key="backgroundColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0s-oG-p0v">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                                <color key="tintColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="EAT"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.16078431372549018" green="0.50196078431372548" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J2n-lM-Zhd">
                                         <rect key="frame" x="0.0" y="220" width="375" height="95"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k59-ZR-kFB">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                                <color key="tintColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="SHOP"/>
+                                                <connections>
+                                                    <segue destination="C4s-Lm-do7" kind="show" id="Va4-uI-ue8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.086274509799999996" green="0.62745098040000002" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gXS-y6-Tye">
                                         <rect key="frame" x="0.0" y="315" width="375" height="95"/>
-                                        <color key="backgroundColor" red="0.16078431369999999" green="0.50196078430000002" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lps-0E-L03">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                                <color key="tintColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="STAY"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95294117647058818" green="0.61176470588235299" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WFh-qB-YUm">
                                         <rect key="frame" x="0.0" y="410" width="375" height="95"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKs-or-jlk">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                                <color key="tintColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="EXPLORE"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dLv-DN-Fr5">
                                         <rect key="frame" x="0.0" y="505" width="375" height="95"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSu-87-5jJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                                <color key="tintColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="EVENTS"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.16078431372549018" green="0.50196078431372548" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -80,12 +123,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="Qvb-sq-tDW">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+                            <rect key="frame" x="0.0" y="64" width="375" height="125"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ShopTableViewCell" rowHeight="90" id="XgS-65-b22" customClass="ShopTableViewCell" customModule="London_v3" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="153" width="375" height="90"/>
+                                <rect key="frame" x="0.0" y="217" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XgS-65-b22" id="zGk-tH-eA3">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
@@ -145,7 +188,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jKN-XD-CDR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="962.5" y="-219.5"/>
+            <point key="canvasLocation" x="1732.5" y="-219.5"/>
         </scene>
         <!--Eat-->
         <scene sceneID="nLR-2Z-M1K">
@@ -207,7 +250,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XLg-OZ-KW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1434.5" y="-219.5"/>
+            <point key="canvasLocation" x="786.5" y="-1001.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Kig-C5-ghZ">
@@ -289,6 +332,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oeG-Nz-Seq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="333.5" y="592.5"/>
+        </scene>
+        <!--Shop-->
+        <scene sceneID="VdL-7Q-SL8">
+            <objects>
+                <navigationController title="Shop" automaticallyAdjustsScrollViewInsets="NO" id="C4s-Lm-do7" customClass="NavigationController" customModule="London_v3" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CGy-S0-RiF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ytA-0d-1I4" kind="relationship" relationship="rootViewController" id="zcB-m7-dFe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PLc-Hg-PtI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136" y="-220"/>
         </scene>
     </scenes>
     <resources>
