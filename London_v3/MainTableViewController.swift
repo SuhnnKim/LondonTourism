@@ -30,7 +30,7 @@ class MainTableViewController: UITableViewController {
         // nav image
         let navImage:UIImage = UIImage(named: "banner.jpg")!
         let navImageView:UIImageView = UIImageView(image: navImage)
-        //navView.addSubview(navImageView)
+        navView.addSubview(navImageView)
         
         // Get the view identifier
         let viewIdentifier = self.restorationIdentifier!
