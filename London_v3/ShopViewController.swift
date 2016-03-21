@@ -12,17 +12,21 @@ class ShopViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var navView: UIView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var navButton: UIImageView!
     
     var list = [Category]()
     var shopCellCtl:ShopTableViewCell = ShopTableViewCell()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
 
         // nav image
         let navImage:UIImage = UIImage(named: "banner.jpg")!
         let navImageView:UIImageView = UIImageView(image: navImage)
         navView.addSubview(navImageView)
+        navView.addSubview(navButton)
         
         // Get the view identifier
         let viewIdentifier = self.restorationIdentifier!

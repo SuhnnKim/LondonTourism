@@ -11,7 +11,7 @@ import UIKit
 class EatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var navView: UIView!
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!    
     
     var list = [Category]()
     var shopCellCtl:ShopTableViewCell = ShopTableViewCell()
@@ -23,6 +23,8 @@ class EatViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         let navImage:UIImage = UIImage(named: "banner.jpg")!
         let navImageView:UIImageView = UIImageView(image: navImage)
         navView.addSubview(navImageView)
+
+        
         
         // Get the view identifier
         let viewIdentifier = self.restorationIdentifier!
