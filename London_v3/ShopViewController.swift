@@ -20,8 +20,6 @@ class ShopViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-
         // nav image
         let navImage:UIImage = UIImage(named: "banner.jpg")!
         let navImageView:UIImageView = UIImageView(image: navImage)

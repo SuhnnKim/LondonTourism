@@ -83,6 +83,9 @@
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                                 <color key="tintColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="EXPLORE"/>
+                                                <connections>
+                                                    <segue destination="sEZ-Gx-yWR" kind="show" id="6An-2w-GAr"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
@@ -105,6 +108,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="FP9-Qi-8Lw"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="eatView" destination="WwV-pW-reu" id="1BD-T2-We6"/>
@@ -211,10 +215,10 @@
             </objects>
             <point key="canvasLocation" x="1457.5" y="-219.5"/>
         </scene>
-        <!--Stay View Controller-->
+        <!--Stay-->
         <scene sceneID="gfu-Ff-yG3">
             <objects>
-                <viewController restorationIdentifier="Stay" id="hvp-KY-39E" customClass="StayViewController" customModule="London_v3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="Stay" title="Stay" id="hvp-KY-39E" customClass="StayViewController" customModule="London_v3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q02-e8-yMw"/>
                         <viewControllerLayoutGuide type="bottom" id="GHz-Ja-gvr"/>
@@ -295,6 +299,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zOf-lV-IC3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="912.5" y="615.5"/>
+        </scene>
+        <!--Explore-->
+        <scene sceneID="XDd-dp-RNh">
+            <objects>
+                <viewController title="Explore" id="sEZ-Gx-yWR" customClass="ExploreViewController" customModule="London_v3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2dn-uJ-ga5"/>
+                        <viewControllerLayoutGuide type="bottom" id="xDn-GP-RbN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qFp-bE-8Us">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ozO-7U-aMz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="navView" destination="ozO-7U-aMz" id="ZxA-2I-nbz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pZy-Jw-Ekx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1451.5" y="615.5"/>
         </scene>
         <!--Eat-->
         <scene sceneID="3Av-Tu-Vti">

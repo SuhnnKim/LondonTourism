@@ -23,14 +23,20 @@ class EatViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         let navImage:UIImage = UIImage(named: "banner.jpg")!
         let navImageView:UIImageView = UIImageView(image: navImage)
         navView.addSubview(navImageView)
-
-        
         
         // Get the view identifier
         let viewIdentifier = self.restorationIdentifier!
         
         // Load the sample data
         list = shopCellCtl.loadList(viewIdentifier)
+        
+        let btnBack = UIButton()
+        btnBack.setImage(UIImage(named: "banner_blue"), forState: .Normal)
+        btnBack.frame = CGRectMake(0, 0, 75, 125)
+        btnBack.addTarget(self, action: Selector("action"), forControlEvents: .TouchUpInside)
+        self.view.addSubview(btnBack)
+//        self.navigationItem.setLeftBarButtonItem( (UIBarButtonItem(image:UIImage(named:"banner_blue"), style: .Plain, target:self, action:"action:")), animated: false)
+
     }
 
     override func didReceiveMemoryWarning() {
