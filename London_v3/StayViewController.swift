@@ -10,6 +10,7 @@ import UIKit
 
 class StayViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var navButton: UIButton!
     @IBOutlet weak var navView: UIView!
     @IBOutlet weak var tableView: UITableView!
 
@@ -23,6 +24,7 @@ class StayViewController: UIViewController, UITableViewDelegate, UITableViewData
         let navImage:UIImage = UIImage(named: "banner.jpg")!
         let navImageView:UIImageView = UIImageView(image: navImage)
         navView.addSubview(navImageView)
+        navView.addSubview(navButton)
         
         // Get the view identifier
         let viewIdentifier = self.restorationIdentifier!
@@ -34,6 +36,11 @@ class StayViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // navButton action
+    @IBAction func navButton(sender: AnyObject) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
     }
     
     // MARK: - Table view data source
