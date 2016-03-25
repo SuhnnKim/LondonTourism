@@ -367,12 +367,17 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="sEZ-Gx-yWR" id="LpE-I7-uC3"/>
+                                    <outlet property="delegate" destination="sEZ-Gx-yWR" id="iPj-m8-dy9"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="collectionView" destination="bZI-kb-j6w" id="m3B-wb-Gqy"/>
                         <outlet property="navButton" destination="YBf-KK-upq" id="jni-PG-0Vo"/>
                         <outlet property="navView" destination="ozO-7U-aMz" id="ZxA-2I-nbz"/>
                     </connections>

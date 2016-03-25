@@ -8,9 +8,13 @@
 
 import UIKit
 
-class ExploreViewController: UIViewController {
+let reuseIdentifier = "photoCell"
+
+class ExploreViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     @IBOutlet weak var navView: UIView!
     @IBOutlet weak var navButton: UIButton!
+    @IBOutlet weak var collectionView: ExploreCollectionView! // Datasource and delegate
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +39,19 @@ class ExploreViewController: UIViewController {
         self.navigationController?.popToRootViewControllerAnimated(true)
     }
     
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
+        return 1
+        // return just one for now
+    }
     
+    @available(iOS 6.0, *)
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell{
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ExploreCollectionViewCell
+        
+        cell.backgroundColor = UIColor.redColor()
+        
+        return cell
+    }
 
     /*
     // MARK: - Navigation
