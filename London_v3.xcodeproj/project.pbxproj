@@ -140,17 +140,17 @@
 				0AA29E631C9F5D2900194866 /* StayViewController.swift */,
 				0AA29E691C9F6F2000194866 /* ShopViewController.swift */,
 				0AA29E671C9F6CD200194866 /* EatViewController.swift */,
+				0A3E5EB21CA44633009C4DF5 /* ExploreViewController.swift */,
 				0A80765C1C9A0E6C0034AEC2 /* ShopTableViewCell.swift */,
 				0AA29E511C9F286E00194866 /* UIColor.swift */,
 				0AA29E531C9F2EC000194866 /* NavigationController.swift */,
+				0A3E5EB81CA44A39009C4DF5 /* ExploreCollectionView.swift */,
+				0A3E5EBA1CA44A62009C4DF5 /* ExploreCollectionViewCell.swift */,
 				0A80762B1C99081D0034AEC2 /* Main.storyboard */,
 				0A8076311C99081D0034AEC2 /* Assets.xcassets */,
 				0A8076331C99081D0034AEC2 /* LaunchScreen.storyboard */,
 				0A8076361C99081D0034AEC2 /* Info.plist */,
 				0A80762E1C99081D0034AEC2 /* London_v3.xcdatamodeld */,
-				0A3E5EB21CA44633009C4DF5 /* ExploreViewController.swift */,
-				0A3E5EB81CA44A39009C4DF5 /* ExploreCollectionView.swift */,
-				0A3E5EBA1CA44A62009C4DF5 /* ExploreCollectionViewCell.swift */,
 			);
 			path = London_v3;
 			sourceTree = "<group>";

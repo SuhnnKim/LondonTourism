@@ -20,6 +20,9 @@ class StayViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // hide default nav bar button
+        self.navigationItem.setHidesBackButton(true, animated: false)
+        
         // nav image
         let navImage:UIImage = UIImage(named: "banner.jpg")!
         let navImageView:UIImageView = UIImageView(image: navImage)

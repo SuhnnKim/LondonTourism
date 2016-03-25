@@ -12,13 +12,16 @@ class ShopViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var navView: UIView!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var navButton: UIImageView!
+    @IBOutlet weak var navButton: UIButton!
     
     var list = [Category]()
     var shopCellCtl:ShopTableViewCell = ShopTableViewCell()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // hide default nav bar button
+        self.navigationItem.setHidesBackButton(true, animated: false)
         
         // nav image
         let navImage:UIImage = UIImage(named: "banner.jpg")!

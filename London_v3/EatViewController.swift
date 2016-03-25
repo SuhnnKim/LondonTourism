@@ -20,6 +20,9 @@ class EatViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // hide default nav bar button
+        self.navigationItem.setHidesBackButton(true, animated: false)
+        
         // nav image
         let navImage:UIImage = UIImage(named: "banner.jpg")!
         let navImageView:UIImageView = UIImageView(image: navImage)
@@ -32,11 +35,6 @@ class EatViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         // Load the sample data
         list = shopCellCtl.loadList(viewIdentifier)
         
-        let btnBack = UIButton()
-        btnBack.setImage(UIImage(named: "banner_blue"), forState: .Normal)
-        btnBack.frame = CGRectMake(0, 0, 75, 125)
-        btnBack.addTarget(self, action: Selector("action"), forControlEvents: .TouchUpInside)
-        self.view.addSubview(btnBack)
    }
 
     override func didReceiveMemoryWarning() {

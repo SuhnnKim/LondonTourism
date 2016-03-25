@@ -139,11 +139,10 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Lq-25-NRS">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hG-4M-MEC">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hG-4M-MEC" userLabel="Nav Button">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="125"/>
                                         <state key="normal" title="Button" image="banner_green"/>
                                         <connections>
-                                            <action selector="navButton:" destination="hvp-KY-39E" eventType="touchUpInside" id="sGR-hP-mQw"/>
                                             <action selector="navButton:" destination="mcE-5d-Bat" eventType="touchUpInside" id="teU-JW-MXx"/>
                                         </connections>
                                     </button>
@@ -211,6 +210,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="navButton" destination="0hG-4M-MEC" id="lSt-bz-L9r"/>
                         <outlet property="navView" destination="7Lq-25-NRS" id="add-Qh-IJP"/>
                         <outlet property="tableView" destination="Vgg-uF-UV5" id="RmR-UK-aWS"/>
                     </connections>
@@ -334,7 +334,6 @@
                                         <state key="normal" title="Button" image="banner_red"/>
                                         <connections>
                                             <action selector="navButton:" destination="sEZ-Gx-yWR" eventType="touchUpInside" id="AdT-51-ji4"/>
-                                            <action selector="navButton:" destination="hvp-KY-39E" eventType="touchUpInside" id="aAc-vn-VxF"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -420,7 +419,6 @@
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="125"/>
                                         <state key="normal" title="Button" image="banner_blue"/>
                                         <connections>
-                                            <action selector="navButton:" destination="hvp-KY-39E" eventType="touchUpInside" id="Ohe-cS-ReW"/>
                                             <action selector="navButton:" destination="ibO-3j-sKk" eventType="touchUpInside" id="uwM-ti-Aq9"/>
                                         </connections>
                                     </button>
