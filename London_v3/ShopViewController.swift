@@ -39,6 +39,9 @@ class ShopViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     // nav button action
+    @IBAction func navButton(sender: AnyObject) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
     
     
     // MARK: - Table view data source

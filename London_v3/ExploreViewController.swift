@@ -10,7 +10,8 @@ import UIKit
 
 class ExploreViewController: UIViewController {
     @IBOutlet weak var navView: UIView!
-
+    @IBOutlet weak var navButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,12 +19,19 @@ class ExploreViewController: UIViewController {
         let navImage:UIImage = UIImage(named: "banner.jpg")!
         let navImageView:UIImageView = UIImageView(image: navImage)
         navView.addSubview(navImageView)
+        navView.addSubview(navButton)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // nav button action
+    @IBAction func navButton(sender: AnyObject) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
+    
     
 
     /*

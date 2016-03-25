@@ -12,6 +12,7 @@ class EatViewController: UIViewController, UITableViewDelegate, UITableViewDataS
 
     @IBOutlet weak var navView: UIView!
     @IBOutlet weak var tableView: UITableView!    
+    @IBOutlet weak var navButton: UIButton!
     
     var list = [Category]()
     var shopCellCtl:ShopTableViewCell = ShopTableViewCell()
@@ -23,6 +24,7 @@ class EatViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         let navImage:UIImage = UIImage(named: "banner.jpg")!
         let navImageView:UIImageView = UIImageView(image: navImage)
         navView.addSubview(navImageView)
+        navView.addSubview(navButton)
         
         // Get the view identifier
         let viewIdentifier = self.restorationIdentifier!
@@ -35,14 +37,18 @@ class EatViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         btnBack.frame = CGRectMake(0, 0, 75, 125)
         btnBack.addTarget(self, action: Selector("action"), forControlEvents: .TouchUpInside)
         self.view.addSubview(btnBack)
-//        self.navigationItem.setLeftBarButtonItem( (UIBarButtonItem(image:UIImage(named:"banner_blue"), style: .Plain, target:self, action:"action:")), animated: false)
-
-    }
+   }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // nav button action
+    @IBAction func navButton(sender: AnyObject) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
+    
     
     // MARK: - Table view data source
     
