@@ -15,7 +15,6 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
     @IBOutlet weak var navButton: UIButton!
     @IBOutlet weak var collectionView: ExploreCollectionView! // Datasource and delegate
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,7 +39,7 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-        return 1
+        return 3
         // return just one for now
     }
     
@@ -49,6 +48,9 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ExploreCollectionViewCell
         
         cell.backgroundColor = UIColor.redColor()
+        let navImage:UIImage = UIImage(named: "topgun.jpg")! // yo 이미지를 인스타에서 불러오면 됨
+        let navImageView:UIImageView = UIImageView(image: navImage)
+        cell.backgroundView = navImageView
         
         return cell
     }
