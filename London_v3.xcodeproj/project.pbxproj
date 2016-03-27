@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A09D5371CA852CB0094C814 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A09D5361CA852CB0094C814 /* Photo.swift */; };
 		0A3E5EB31CA44633009C4DF5 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E5EB21CA44633009C4DF5 /* ExploreViewController.swift */; };
 		0A3E5EB91CA44A39009C4DF5 /* ExploreCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E5EB81CA44A39009C4DF5 /* ExploreCollectionView.swift */; };
 		0A3E5EBB1CA44A62009C4DF5 /* ExploreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E5EBA1CA44A62009C4DF5 /* ExploreCollectionViewCell.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A09D5361CA852CB0094C814 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		0A3E5EB21CA44633009C4DF5 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		0A3E5EB81CA44A39009C4DF5 /* ExploreCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreCollectionView.swift; sourceTree = "<group>"; };
 		0A3E5EBA1CA44A62009C4DF5 /* ExploreCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				0AA29E511C9F286E00194866 /* UIColor.swift */,
 				0AA29E531C9F2EC000194866 /* NavigationController.swift */,
 				0A80762B1C99081D0034AEC2 /* Main.storyboard */,
+				0A09D5361CA852CB0094C814 /* Photo.swift */,
 				0A8076311C99081D0034AEC2 /* Assets.xcassets */,
 				0A8076331C99081D0034AEC2 /* LaunchScreen.storyboard */,
 				0A8076361C99081D0034AEC2 /* Info.plist */,
@@ -316,6 +319,7 @@
 				0A3E5EB91CA44A39009C4DF5 /* ExploreCollectionView.swift in Sources */,
 				0A8076281C99081D0034AEC2 /* AppDelegate.swift in Sources */,
 				0AA29E541C9F2EC000194866 /* NavigationController.swift in Sources */,
+				0A09D5371CA852CB0094C814 /* Photo.swift in Sources */,
 				0A80765D1C9A0E6C0034AEC2 /* ShopTableViewCell.swift in Sources */,
 				0AA29E681C9F6CD200194866 /* EatViewController.swift in Sources */,
 				0AA29E6A1C9F6F2000194866 /* ShopViewController.swift in Sources */,
