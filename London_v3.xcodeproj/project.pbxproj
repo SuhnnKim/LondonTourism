@@ -183,6 +183,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A80764F1C99081D0034AEC2 /* Build configuration list for PBXNativeTarget "London_v3" */;
 			buildPhases = (
+				0ACE6EAF1CAB70FF00B57677 /* Generate Model Objects */,
 				0A8076201C99081D0034AEC2 /* Sources */,
 				0A8076211C99081D0034AEC2 /* Frameworks */,
 				0A8076221C99081D0034AEC2 /* Resources */,
@@ -301,6 +302,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0ACE6EAF1CAB70FF00B57677 /* Generate Model Objects */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Model Objects";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"$PROJECT_DIR/Proto\" && /usr/local/bin/mogenerator --swift -m Proto.xcdatamodeld/Proto.xcdatamodel  --output-dir ./ModelObjects";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A8076201C99081D0034AEC2 /* Sources */ = {
