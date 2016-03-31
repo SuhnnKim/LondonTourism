@@ -17,11 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // create db
     func createObjects(){
         
-        for i in 0...10 {
-            let a = EatMO(managedObjectContext: self.managedObjectContext)
-            a!.name = "Test name"
-        }
-        
+                
         
     }
     
@@ -32,6 +28,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().translucent = true
+        
+        
+        if let path = NSBundle.mainBundle().pathForResource("data", ofType:"json"){
+            
+            do{
+                let data = try NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMapped)
+                do{
+                    print(data)
+                }catch {
+                    print("Level file  is not valid JSON: \(error)")
+                    
+                }
+                
+                
+            }catch {
+                print("Could not load level file: , error: \(error)")
+                
+            }
+            
+        } else {
+            print("Could not find level file: ")
+            
+        }
+            
+        
+        
         return true
     }
 

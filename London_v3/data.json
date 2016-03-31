@@ -1,0 +1,210 @@
+{
+    "Shops": [
+              {
+              "name": "White Oaks Mall",
+              "address": "1105 Wellington Rd, London, ON N6E 1V4",
+              "website": "whiteoaksmall.ca",
+              "phone": "(519) 681-0434"
+              },
+              {
+              "name": "Masonville Mall",
+              "address": "1680 Richmond St, London, ON N6G 3Y9",
+              "website": "",
+              "phone": "(519) 667-4884"
+              },
+              {
+              "name": "Westmount Mall",
+              "address": "785 Wonderland Rd S, London, ON N6K 1M6",
+              "website": "",
+              "phone": "(866) 681-2715"
+              },
+              {
+              "name": "Urban Outfitters",
+              "address": "743 Richmond St., London, ON N6A 3H3",
+              "website": "urbanoutfitters.com",
+              "phone": "(519) 438-0331"
+              },
+              {
+              "name": "Jordan Stewart",
+              "address": "533 Richmond St, London, ON N6A 3E9",
+              "website": "",
+              "phone": "(519) 850-5100"
+              },
+              {
+              "name": "Elizabeth Noel",
+              "address": "744 Richmond St, London, ON N6A 3H3",
+              "website": "elizabethnoel.com",
+              "phone": "(519) 434-3122"
+              },
+              {
+              "name": "Jordan Stewart",
+              "address": "533 Richmond St, London, ON N6A 3E9",
+              "website": "",
+              "phone": "(519) 850-5100"
+              },
+              {
+              "name": "Running Room",
+              "address": "620 Richmond St, London, ON N6A 5J9",
+              "website": "runningroom.com",
+              "phone": "(519) 438-8550"
+              },
+              {
+              "name": "American Apparel",
+              "address": "551 Richmond St, London, ON N6A 3E9",
+              "website": "americanapparel.net",
+              "phone": "(519) 850-5123"
+              },
+              {
+              "name": "Tribal Mountain Trade",
+              "address": "575 Richmond St, London, ON N6A 3G2",
+              "website": "",
+              "phone": "(519) 432-3646"
+              },
+              {
+              "name": "Quantum Furnishing",
+              "address": "487 Richmond St, London, ON N6A 3E4",
+              "website": "quantumfurnishings.com",
+              "phone": "(519) 438-5944"
+              },
+              {
+              "name": "Grooves",
+              "address": "353 Clarence St, London, ON N6A 3M4",
+              "website": "groovesrecordstore.com",
+              "phone": "(519) 640-6714"
+              },
+              {
+              "name": "La Jolie Jupe",
+              "address": "642 Richmond St, London, ON N6A 3G6",
+              "website": "",
+              "phone": "(519) 438-2241"
+              },
+              {
+              "name": "Sea Jewels",
+              "address": "Citi Plaza, 355 Wellington St, London, ON N6A 3N7",
+              "website": "seajewels.ca",
+              "phone": "(519) 672-5671"
+              },
+              {
+              "name": "Attic Books",
+              "address": "240 Dundas St, London, ON N6A 1H3",
+              "website": "atticbooks.ca",
+              "phone": "(519) 432-7277"
+              },
+              {
+              "name": "Leslie’s Uptown",
+              "address": "551 Richmond St, London, ON N6A 3E9",
+              "website": "",
+              "phone": "(519) 679-1030"
+              }
+              
+    ],//shops ends
+    "Stays": [
+              {
+              "name": "Delta London Armouries",
+              "rating": 4,
+              "address": "325 Dundas St, London, ON N6B 1T9",
+              "website": "deltalondonarmouries.com",
+              "phone": "(519) 679-6111"
+              },
+              {
+              "name": "DoubleTree by Hilton",
+              "rating": 4,
+              "address": "300 King Street, London, ON N6B 1S2",
+              "website": "doubletree3.hilton.com",
+              "phone": "(519) 439-1661"
+              },
+              {
+              "name": "Hampton Inn by Hilton",
+              "rating": 4,
+              "address": "300 King Street, London, ON N6B 1S2",
+              "website": "doubletree3.hilton.com",
+              "phone": "(519) 439-1661"
+              },
+              {
+              "name": "Homewood Suites by Hilton",
+              "rating": 4,
+              "address": "45 Bessemer Rd, London, ON N6E",
+              "website": "homewoodsuites3.hilton.com",
+              "phone": "(519) 686-7700"
+              },
+              {
+              "name": "Residence Inn London",
+              "rating": 4,
+              "address": "383 Colborne St, London, ON N6B 3P5",
+              "website": "marriott.com",
+              "phone": "(519) 433-7222"
+              },
+              {
+              "name": "The Windermere Manor",
+              "rating": 4,
+              "address": "200 Collip Circle, London, ON N6G 4X8",
+              "website": "windermeremanor.com",
+              "phone": "(519) 858-1414"
+              },
+              {
+              "name": "Best Western Plus Lamplighter Inn",
+              "rating": 3,
+              "address": "591 Wellington Rd, London, ON N6C 4R3",
+              "website": "lamplighterinn.ca",
+              "phone": "(519) 681-7151"
+              },
+              {
+              "name": "Country Inn & Suites",
+              "rating": 3,
+              "address": "774 Basline Rd East, London, ON N6C 2R6",
+              "website": "hotels.countryinns.com",
+              "phone": "(519) 430-1150"
+              },
+              {
+              "name": "Four Points by Sheraton",
+              "rating": 3,
+              "address": "1150 Wellington Rd S, London, ON N6E 1M3",
+              "website": "fourpointslondonontario.com",
+              "phone": "(519) 681-0600"
+              },
+              {
+              "name": "Econo Lodge",
+              "rating": 2,
+              "address": "636 York St, London, ON N5W 2S7",
+              "website": "choicehotels.ca",
+              "phone": "(519) 433-8161"
+              },
+              {
+              "name": "Courtyard London",
+              "rating": 3,
+              "address": "864 Exeter Rd, London, ON N6E 1L5",
+              "website": "marriott.com",
+              "phone": "(519) 680-0077"
+              },
+              {
+              "name": "Station Park All Suite Hotel",
+              "rating": 4,
+              "address": "242 Pall Mall St, London, ON N6A 5P6",
+              "website": "stationparkinn.ca",
+              "phone": "(519) 642-4444"
+              },
+              {
+              "name": "Quality Suites",
+              "rating": 3,
+              "address": "1120 Dearness Dr, London, ON N6E 1N9",
+              "website": "choicehotels.ca",
+              "phone": "(519) 680-1024"
+              },
+              {
+              "name": "Ramada London ",
+              "rating": 3,
+              "address": "817 Exeter Road, London, ON N6E 1W1",
+              "website": "ramada.com",
+              "phone": "(519) 681-4900"
+              },
+              {
+              "name": "Holiday Inn",
+              "rating": 3,
+              "address": "855 Wellington Road South, London, ON N6E 3N5",
+              "website": "ihg.com",
+              "phone": "(519) 668-7900"
+              }
+    
+    ],//stays ends
+    "dataTitle": "London Data"
+}
