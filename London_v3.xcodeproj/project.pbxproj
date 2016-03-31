@@ -29,15 +29,14 @@
 		0AA29E681C9F6CD200194866 /* EatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA29E671C9F6CD200194866 /* EatViewController.swift */; };
 		0AA29E6A1C9F6F2000194866 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA29E691C9F6F2000194866 /* ShopViewController.swift */; };
 		0ACE6EB71CAD6AAB00B57677 /* Selectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE6EB61CAD6AAB00B57677 /* Selectable.swift */; };
-		0ACE6EB91CAD711200B57677 /* ModelObjects in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE6EB81CAD711200B57677 /* ModelObjects */; };
-		0ACE6EF31CAD8C2900B57677 /* _EatMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE6EEB1CAD8C2900B57677 /* _EatMO.swift */; };
-		0ACE6EF41CAD8C2900B57677 /* _EventMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE6EEC1CAD8C2900B57677 /* _EventMO.swift */; };
-		0ACE6EF51CAD8C2900B57677 /* _ShopMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE6EED1CAD8C2900B57677 /* _ShopMO.swift */; };
-		0ACE6EF61CAD8C2900B57677 /* _StayMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE6EEE1CAD8C2900B57677 /* _StayMO.swift */; };
-		0ACE6EF71CAD8C2900B57677 /* EatMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE6EEF1CAD8C2900B57677 /* EatMO.swift */; };
-		0ACE6EF81CAD8C2900B57677 /* EventMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE6EF01CAD8C2900B57677 /* EventMO.swift */; };
-		0ACE6EF91CAD8C2900B57677 /* ShopMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE6EF11CAD8C2900B57677 /* ShopMO.swift */; };
-		0ACE6EFA1CAD8C2900B57677 /* StayMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE6EF21CAD8C2900B57677 /* StayMO.swift */; };
+		0ACE6F041CAD989C00B57677 /* _EatMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE6EFC1CAD989C00B57677 /* _EatMO.swift */; };
+		0ACE6F051CAD989C00B57677 /* _EventMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE6EFD1CAD989C00B57677 /* _EventMO.swift */; };
+		0ACE6F061CAD989C00B57677 /* _ShopMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE6EFE1CAD989C00B57677 /* _ShopMO.swift */; };
+		0ACE6F071CAD989C00B57677 /* _StayMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE6EFF1CAD989C00B57677 /* _StayMO.swift */; };
+		0ACE6F081CAD989C00B57677 /* EatMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE6F001CAD989C00B57677 /* EatMO.swift */; };
+		0ACE6F091CAD989C00B57677 /* EventMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE6F011CAD989C00B57677 /* EventMO.swift */; };
+		0ACE6F0A1CAD989C00B57677 /* ShopMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE6F021CAD989C00B57677 /* ShopMO.swift */; };
+		0ACE6F0B1CAD989C00B57677 /* StayMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE6F031CAD989C00B57677 /* StayMO.swift */; };
 		0AE7CB0F1C9B2C080068C9BB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7CB0E1C9B2C080068C9BB /* HomeViewController.swift */; };
 		0AE7CB151C9B4B6C0068C9BB /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7CB141C9B4B6C0068C9BB /* Category.swift */; };
 		0AE7CB171C9B4F0B0068C9BB /* Eat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7CB161C9B4F0B0068C9BB /* Eat.swift */; };
@@ -89,15 +88,14 @@
 		0AA29E671C9F6CD200194866 /* EatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EatViewController.swift; sourceTree = "<group>"; };
 		0AA29E691C9F6F2000194866 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		0ACE6EB61CAD6AAB00B57677 /* Selectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Selectable.swift; sourceTree = "<group>"; };
-		0ACE6EB81CAD711200B57677 /* ModelObjects */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ModelObjects; sourceTree = "<group>"; };
-		0ACE6EEB1CAD8C2900B57677 /* _EatMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = _EatMO.swift; path = ModelObjects/_EatMO.swift; sourceTree = "<group>"; };
-		0ACE6EEC1CAD8C2900B57677 /* _EventMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = _EventMO.swift; path = ModelObjects/_EventMO.swift; sourceTree = "<group>"; };
-		0ACE6EED1CAD8C2900B57677 /* _ShopMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = _ShopMO.swift; path = ModelObjects/_ShopMO.swift; sourceTree = "<group>"; };
-		0ACE6EEE1CAD8C2900B57677 /* _StayMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = _StayMO.swift; path = ModelObjects/_StayMO.swift; sourceTree = "<group>"; };
-		0ACE6EEF1CAD8C2900B57677 /* EatMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EatMO.swift; path = ModelObjects/EatMO.swift; sourceTree = "<group>"; };
-		0ACE6EF01CAD8C2900B57677 /* EventMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventMO.swift; path = ModelObjects/EventMO.swift; sourceTree = "<group>"; };
-		0ACE6EF11CAD8C2900B57677 /* ShopMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShopMO.swift; path = ModelObjects/ShopMO.swift; sourceTree = "<group>"; };
-		0ACE6EF21CAD8C2900B57677 /* StayMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StayMO.swift; path = ModelObjects/StayMO.swift; sourceTree = "<group>"; };
+		0ACE6EFC1CAD989C00B57677 /* _EatMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = _EatMO.swift; path = London_v3/ModelObjects/_EatMO.swift; sourceTree = "<group>"; };
+		0ACE6EFD1CAD989C00B57677 /* _EventMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = _EventMO.swift; path = London_v3/ModelObjects/_EventMO.swift; sourceTree = "<group>"; };
+		0ACE6EFE1CAD989C00B57677 /* _ShopMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = _ShopMO.swift; path = London_v3/ModelObjects/_ShopMO.swift; sourceTree = "<group>"; };
+		0ACE6EFF1CAD989C00B57677 /* _StayMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = _StayMO.swift; path = London_v3/ModelObjects/_StayMO.swift; sourceTree = "<group>"; };
+		0ACE6F001CAD989C00B57677 /* EatMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EatMO.swift; path = London_v3/ModelObjects/EatMO.swift; sourceTree = "<group>"; };
+		0ACE6F011CAD989C00B57677 /* EventMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventMO.swift; path = London_v3/ModelObjects/EventMO.swift; sourceTree = "<group>"; };
+		0ACE6F021CAD989C00B57677 /* ShopMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShopMO.swift; path = London_v3/ModelObjects/ShopMO.swift; sourceTree = "<group>"; };
+		0ACE6F031CAD989C00B57677 /* StayMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StayMO.swift; path = London_v3/ModelObjects/StayMO.swift; sourceTree = "<group>"; };
 		0AE7CB0E1C9B2C080068C9BB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0AE7CB141C9B4B6C0068C9BB /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		0AE7CB161C9B4F0B0068C9BB /* Eat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eat.swift; sourceTree = "<group>"; };
@@ -131,6 +129,7 @@
 		0A80761B1C99081D0034AEC2 = {
 			isa = PBXGroup;
 			children = (
+				0ACE6EFB1CAD986E00B57677 /* ModelObjects */,
 				0A8076261C99081D0034AEC2 /* London_v3 */,
 				0A80763E1C99081D0034AEC2 /* London_v3Tests */,
 				0A8076491C99081D0034AEC2 /* London_v3UITests */,
@@ -151,8 +150,6 @@
 		0A8076261C99081D0034AEC2 /* London_v3 */ = {
 			isa = PBXGroup;
 			children = (
-				0ACE6EEA1CAD8BF000B57677 /* ModelObjects */,
-				0ACE6EB81CAD711200B57677 /* ModelObjects */,
 				0A8076271C99081D0034AEC2 /* AppDelegate.swift */,
 				0ACE6EB61CAD6AAB00B57677 /* Selectable.swift */,
 				0A8076291C99081D0034AEC2 /* ViewController.swift */,
@@ -199,17 +196,17 @@
 			path = London_v3UITests;
 			sourceTree = "<group>";
 		};
-		0ACE6EEA1CAD8BF000B57677 /* ModelObjects */ = {
+		0ACE6EFB1CAD986E00B57677 /* ModelObjects */ = {
 			isa = PBXGroup;
 			children = (
-				0ACE6EEB1CAD8C2900B57677 /* _EatMO.swift */,
-				0ACE6EEC1CAD8C2900B57677 /* _EventMO.swift */,
-				0ACE6EED1CAD8C2900B57677 /* _ShopMO.swift */,
-				0ACE6EEE1CAD8C2900B57677 /* _StayMO.swift */,
-				0ACE6EEF1CAD8C2900B57677 /* EatMO.swift */,
-				0ACE6EF01CAD8C2900B57677 /* EventMO.swift */,
-				0ACE6EF11CAD8C2900B57677 /* ShopMO.swift */,
-				0ACE6EF21CAD8C2900B57677 /* StayMO.swift */,
+				0ACE6EFC1CAD989C00B57677 /* _EatMO.swift */,
+				0ACE6EFD1CAD989C00B57677 /* _EventMO.swift */,
+				0ACE6EFE1CAD989C00B57677 /* _ShopMO.swift */,
+				0ACE6EFF1CAD989C00B57677 /* _StayMO.swift */,
+				0ACE6F001CAD989C00B57677 /* EatMO.swift */,
+				0ACE6F011CAD989C00B57677 /* EventMO.swift */,
+				0ACE6F021CAD989C00B57677 /* ShopMO.swift */,
+				0ACE6F031CAD989C00B57677 /* StayMO.swift */,
 			);
 			name = ModelObjects;
 			sourceTree = "<group>";
@@ -322,7 +319,6 @@
 				0A8076351C99081D0034AEC2 /* LaunchScreen.storyboard in Resources */,
 				0A8076321C99081D0034AEC2 /* Assets.xcassets in Resources */,
 				0A80762D1C99081D0034AEC2 /* Main.storyboard in Resources */,
-				0ACE6EB91CAD711200B57677 /* ModelObjects in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,31 +360,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ACE6EF81CAD8C2900B57677 /* EventMO.swift in Sources */,
+				0ACE6F091CAD989C00B57677 /* EventMO.swift in Sources */,
 				0A8076301C99081D0034AEC2 /* London_v3.xcdatamodeld in Sources */,
 				0AA29E521C9F286E00194866 /* UIColor.swift in Sources */,
-				0ACE6EF41CAD8C2900B57677 /* _EventMO.swift in Sources */,
+				0ACE6F051CAD989C00B57677 /* _EventMO.swift in Sources */,
 				0AE7CB151C9B4B6C0068C9BB /* Category.swift in Sources */,
 				0AA29E661C9F694A00194866 /* Stay.swift in Sources */,
-				0ACE6EF31CAD8C2900B57677 /* _EatMO.swift in Sources */,
+				0ACE6F041CAD989C00B57677 /* _EatMO.swift in Sources */,
 				0A3E5EBB1CA44A62009C4DF5 /* ExploreCollectionViewCell.swift in Sources */,
 				0A3E5EB31CA44633009C4DF5 /* ExploreViewController.swift in Sources */,
 				0AA29E501C9F1FFA00194866 /* TabBarController.swift in Sources */,
 				0A80762A1C99081D0034AEC2 /* ViewController.swift in Sources */,
 				0A8076671C9A42C30034AEC2 /* Shop.swift in Sources */,
 				0A3E5EB91CA44A39009C4DF5 /* ExploreCollectionView.swift in Sources */,
-				0ACE6EF61CAD8C2900B57677 /* _StayMO.swift in Sources */,
+				0ACE6F071CAD989C00B57677 /* _StayMO.swift in Sources */,
 				0A8076281C99081D0034AEC2 /* AppDelegate.swift in Sources */,
 				0AA29E541C9F2EC000194866 /* NavigationController.swift in Sources */,
 				0A09D5371CA852CB0094C814 /* Photo.swift in Sources */,
 				0A80765D1C9A0E6C0034AEC2 /* ShopTableViewCell.swift in Sources */,
-				0ACE6EF91CAD8C2900B57677 /* ShopMO.swift in Sources */,
-				0ACE6EF71CAD8C2900B57677 /* EatMO.swift in Sources */,
-				0ACE6EFA1CAD8C2900B57677 /* StayMO.swift in Sources */,
+				0ACE6F0A1CAD989C00B57677 /* ShopMO.swift in Sources */,
+				0ACE6F081CAD989C00B57677 /* EatMO.swift in Sources */,
+				0ACE6F0B1CAD989C00B57677 /* StayMO.swift in Sources */,
 				0AA29E681C9F6CD200194866 /* EatViewController.swift in Sources */,
 				0ACE6EB71CAD6AAB00B57677 /* Selectable.swift in Sources */,
 				0AA29E6A1C9F6F2000194866 /* ShopViewController.swift in Sources */,
-				0ACE6EF51CAD8C2900B57677 /* _ShopMO.swift in Sources */,
+				0ACE6F061CAD989C00B57677 /* _ShopMO.swift in Sources */,
 				0AE7CB171C9B4F0B0068C9BB /* Eat.swift in Sources */,
 				0AE7CB0F1C9B2C080068C9BB /* HomeViewController.swift in Sources */,
 				0AA29E641C9F5D2900194866 /* StayViewController.swift in Sources */,

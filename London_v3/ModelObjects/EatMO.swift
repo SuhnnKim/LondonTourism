@@ -1,6 +1,7 @@
+import Foundation
+
 @objc(EatMO)
 public class EatMO: _EatMO, Selectable {
-    
     var displayName : String {
         return self.name ?? ""
     }
@@ -21,7 +22,7 @@ public class EatMO: _EatMO, Selectable {
         return self.address ?? ""
     }
     
-    var displayRating : Int32 {
-        return self.rating ?? ""
+    var displayRating : NSNumber {
+        return self.rating ?? 0
     }
 }

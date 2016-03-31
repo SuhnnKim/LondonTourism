@@ -1,5 +1,7 @@
+import Foundation
+
 @objc(StayMO)
-public class StayMO: _StayMO, Selectable {
+public class StayMO: _StayMO {
     var displayName : String {
         return self.name ?? ""
     }
@@ -20,7 +22,7 @@ public class StayMO: _StayMO, Selectable {
         return self.address ?? ""
     }
     
-    var displayRating : Int32 {
-        return self.rating ?? ""
+    var displayRating : NSNumber {
+        return self.rating ?? 0
     }
 }

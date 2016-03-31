@@ -1,7 +1,7 @@
 import Foundation
 
 @objc(ShopMO)
-public class ShopMO: _ShopMO, Selectable {
+public class ShopMO: _ShopMO {
     var displayName : String {
         return self.name ?? ""
     }
@@ -22,8 +22,7 @@ public class ShopMO: _ShopMO, Selectable {
         return self.address ?? ""
     }
     
-    var displayRating : Int32 {
-        return self.rating ?? ""
+    var displayRating : NSNumber {
+        return self.rating ?? 0
     }
-        
 }

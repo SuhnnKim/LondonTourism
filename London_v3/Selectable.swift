@@ -13,7 +13,7 @@ protocol Selectable{
     var displayName : String { get }
     var displayAddress : String { get }
     var displayType : String { get }
-    var displayRating : Int32 { get }
+    var displayRating : NSNumber { get }
     var displayPhone : String { get }
     var displayImage : String { get }
 }

@@ -1,26 +1,22 @@
+import Foundation
+
 @objc(EventMO)
-public class EventMO: _EventMO, Selectable {
+public class EventMO: _EventMO {
     var displayName : String {
-        return self.name ?? ""
+        return self.title ?? ""
     }
     
     var displayType : String {
-        return self.type ?? ""
+        return self.location ?? ""
     }
     
     var displayPhone : String {
-        return self.phone ?? ""
+        return self.date ?? ""
     }
     
     var displayImage : String {
-        return self.image ?? ""
+        return self.price ?? ""
     }
     
-    var displayAddress : String {
-        return self.address ?? ""
-    }
     
-    var displayRating : Int32 {
-        return self.rating ?? ""
-    }
 }
