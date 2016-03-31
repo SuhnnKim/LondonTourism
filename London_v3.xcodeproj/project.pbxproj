@@ -316,7 +316,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"$PROJECT_DIR/Proto\" && /usr/local/bin/mogenerator --swift -m Proto.xcdatamodeld/Proto.xcdatamodel  --output-dir ./ModelObjects";
+			shellScript = "cd \"$PROJECT_DIR/London_v3\" && /usr/local/bin/mogenerator --swift -m London_v3.xcdatamodeld/London_v3.xcdatamodel  --output-dir ./ModelObjects";
 		};
 /* End PBXShellScriptBuildPhase section */
 

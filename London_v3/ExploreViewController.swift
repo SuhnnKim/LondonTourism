@@ -14,6 +14,7 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
     @IBOutlet weak var navView: UIView!
     @IBOutlet weak var navButton: UIButton!
     @IBOutlet weak var collectionView: ExploreCollectionView! // Datasource and delegate
+    @IBOutlet weak var navArrow: UIImageView!
     
     // MARK: Photo collection
     var photos = [Photo]()
@@ -30,6 +31,7 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
         let navImageView:UIImageView = UIImageView(image: navImage)
         navView.addSubview(navImageView)
         navView.addSubview(navButton)
+        navButton.addSubview(navArrow)
     }
 
     override func didReceiveMemoryWarning() {

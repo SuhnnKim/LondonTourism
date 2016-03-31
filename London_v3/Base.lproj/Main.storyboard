@@ -146,6 +146,9 @@
                                             <action selector="navButton:" destination="mcE-5d-Bat" eventType="touchUpInside" id="teU-JW-MXx"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow_back" translatesAutoresizingMaskIntoConstraints="NO" id="qzf-hr-8Pn">
+                                        <rect key="frame" x="0.0" y="33" width="60" height="60"/>
+                                    </imageView>
                                 </subviews>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vgg-uF-UV5">
@@ -210,6 +213,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="navArrow" destination="qzf-hr-8Pn" id="Vif-zp-NCc"/>
                         <outlet property="navButton" destination="0hG-4M-MEC" id="lSt-bz-L9r"/>
                         <outlet property="navView" destination="7Lq-25-NRS" id="add-Qh-IJP"/>
                         <outlet property="tableView" destination="Vgg-uF-UV5" id="RmR-UK-aWS"/>
@@ -241,6 +245,9 @@
                                             <action selector="navButton:" destination="hvp-KY-39E" eventType="touchUpInside" id="SJh-it-Xwq"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow_back" translatesAutoresizingMaskIntoConstraints="NO" id="ZGd-ci-adx">
+                                        <rect key="frame" x="0.0" y="33" width="60" height="60"/>
+                                    </imageView>
                                 </subviews>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e8v-My-cOU">
@@ -305,6 +312,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="navArrow" destination="ZGd-ci-adx" id="Sav-hp-Xbr"/>
                         <outlet property="navButton" destination="QW3-c4-W4r" id="vjy-34-aax"/>
                         <outlet property="navView" destination="Rwk-kH-dz6" id="95z-qW-Az9"/>
                         <outlet property="tableView" destination="e8v-My-cOU" id="PY6-cf-9t9"/>
@@ -376,6 +384,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="collectionView" destination="bZI-kb-j6w" id="m3B-wb-Gqy"/>
+                        <outlet property="navArrow" destination="W8j-h6-vuh" id="v99-fm-aQs"/>
                         <outlet property="navButton" destination="YBf-KK-upq" id="jni-PG-0Vo"/>
                         <outlet property="navView" destination="ozO-7U-aMz" id="ZxA-2I-nbz"/>
                     </connections>
@@ -492,6 +501,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="narArrow" destination="160-pf-R9H" id="HIk-XX-Xod"/>
                         <outlet property="navButton" destination="71h-qa-DSF" id="8gW-i0-lu5"/>
                         <outlet property="navView" destination="mvB-ww-qFY" id="lDb-i8-co6"/>
                         <outlet property="tableView" destination="pX0-2O-N3Q" id="GVJ-nw-cmy"/>

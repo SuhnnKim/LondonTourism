@@ -13,6 +13,7 @@ class EatViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     @IBOutlet weak var navView: UIView!
     @IBOutlet weak var tableView: UITableView!    
     @IBOutlet weak var navButton: UIButton!
+    @IBOutlet weak var narArrow: UIImageView!
     
     var list = [Category]()
     var shopCellCtl:ShopTableViewCell = ShopTableViewCell()
@@ -24,10 +25,12 @@ class EatViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         self.navigationItem.setHidesBackButton(true, animated: false)
         
         // nav image
-        let navImage:UIImage = UIImage(named: "banner.jpg")!
-        let navImageView:UIImageView = UIImageView(image: navImage)
+        let navImage:UIImage = UIImage(named: "statusbar_gradient.jpg")!
+        let navImageView:UIImageView = UIImageView(image: navImage)        
+        
         navView.addSubview(navImageView)
         navView.addSubview(navButton)
+        navButton.addSubview(narArrow)
         
         // Get the view identifier
         let viewIdentifier = self.restorationIdentifier!

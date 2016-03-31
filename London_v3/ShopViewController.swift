@@ -13,6 +13,7 @@ class ShopViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var navView: UIView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var navButton: UIButton!
+    @IBOutlet weak var navArrow: UIImageView!
     
     var list = [Category]()
     var shopCellCtl:ShopTableViewCell = ShopTableViewCell()
@@ -28,6 +29,7 @@ class ShopViewController: UIViewController, UITableViewDelegate, UITableViewData
         let navImageView:UIImageView = UIImageView(image: navImage)
         navView.addSubview(navImageView)
         navView.addSubview(navButton)
+        navButton.addSubview(navArrow)
         
         // Get the view identifier
         let viewIdentifier = self.restorationIdentifier!
