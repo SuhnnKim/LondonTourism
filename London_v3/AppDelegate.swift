@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import SwiftyJSON
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,34 +27,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Make navigation bar translucent
         UINavigationBar.appearance().setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().translucent = true
         
-        
+        // Load JSON data
         if let path = NSBundle.mainBundle().pathForResource("data", ofType:"json"){
             
             do{
+                
                 let data = try NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMapped)
-                do{
-                    print(data)
-                }catch {
-                    print("Level file  is not valid JSON: \(error)")
-                    
-                }
+                let jsonData = JSON(data)
+                print(jsonData)
                 
-                
-            }catch {
-                print("Could not load level file: , error: \(error)")
-                
+            } catch {
+                print("Could not load level file")
             }
             
         } else {
-            print("Could not find level file: ")
-            
+            print("Could not find level file")
         }
             
-        
         
         return true
     }
