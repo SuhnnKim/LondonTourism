@@ -13,6 +13,18 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    // create db
+    func createObjects(){
+        
+        for i in 0...10 {
+            let a = EatMO(managedObjectContext: self.managedObjectContext)
+            a!.name = "Test name"
+        }
+        
+        
+    }
+    
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
