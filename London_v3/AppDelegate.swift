@@ -15,36 +15,11 @@ import SwiftyJSON
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-    // create db
-    func createObjects(data: AnyObject){
-        
-        let json = JSON(data)
-        
-        // Shops
-        for shop in json["Shops"].arrayValue{
-            let shopObj = ShopMO(managedObjectContext: self.managedObjectContext)
-            shopObj!.name = shop["name"].stringValue
-            shopObj!.address = shop["address"].stringValue
-            shopObj!.website = shop["website"].stringValue
-            shopObj!.phone = shop["phone"].stringValue
-        }
-        
-        // Stays
-        for shop in json["Stays"].arrayValue{
-            let stayObj = StayMO(managedObjectContext: self.managedObjectContext)
-            stayObj!.name = shop["name"].stringValue
-            stayObj!.address = shop["address"].stringValue
-            stayObj!.website = shop["website"].stringValue
-            stayObj!.phone = shop["phone"].stringValue
-        }
-        
-        
-    }
-    
-
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        print(self.applicationSupportDirectory())
+        
         // Override point for customization after application launch.
         
         // Make navigation bar translucent
@@ -60,9 +35,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let data = try NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMapped)
                 
                 do{
-                let jsonResult = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers)
-                    print("JSON serialization succeeded!")
-                    //createObjects(jsonResult)
+                    let jsonResult = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers)
+                        print("JSON serialization succeeded!")
+                    
+                        createObjects(jsonResult)
+                    
                 } catch {
                     print("JSON serialization failed")
                 }
@@ -74,10 +51,58 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             print("Could not find level file")
         }
-            
         
         return true
     }
+    
+    // Create db
+    func createObjects(data: AnyObject){
+        
+        let json = JSON(data)
+        
+        // Shops
+        if !self.hasObjects(ShopMO.entityName()){
+            for shop in json["Shops"].arrayValue{
+                let shopObj = ShopMO(managedObjectContext: self.managedObjectContext)
+                shopObj!.name = shop["name"].stringValue
+                shopObj!.address = shop["address"].stringValue
+                shopObj!.website = shop["website"].stringValue
+                shopObj!.phone = shop["phone"].stringValue
+            }
+        }
+        
+        // Stays
+        if !self.hasObjects(StayMO.entityName()){
+            for shop in json["Stays"].arrayValue{
+                let stayObj = StayMO(managedObjectContext: self.managedObjectContext)
+                stayObj!.name = shop["name"].stringValue
+                stayObj!.address = shop["address"].stringValue
+                stayObj!.website = shop["website"].stringValue
+                stayObj!.phone = shop["phone"].stringValue
+            }
+        }
+    }
+    
+    // Check if DB already exists
+    func hasObjects(entityName: String) -> Bool {
+        let fetchRequest = NSFetchRequest(entityName: entityName)
+        
+        let results = try? self.managedObjectContext.executeFetchRequest(fetchRequest)
+        
+        if results != nil {
+            return (results!.count > 0)
+        }
+        
+        return false
+    }
+    
+    func applicationSupportDirectory() -> NSURL {
+        let urls = NSFileManager.defaultManager().URLsForDirectory(.ApplicationSupportDirectory, inDomains: .UserDomainMask)
+        let applicationSupportUrl = urls[urls.endIndex-1] as NSURL
+        
+        return applicationSupportUrl
+    }
+    
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
