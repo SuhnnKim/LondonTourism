@@ -17,9 +17,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     // create db
-    func createObjects(){
+    func createObjects(data: AnyObject){
         
-                
+        let json = JSON(data)
+        
+        // Shops
+        for shop in json["Shops"].arrayValue{
+            let shopObj = ShopMO(managedObjectContext: self.managedObjectContext)
+            shopObj!.name = shop["name"].stringValue
+            shopObj!.address = shop["address"].stringValue
+            shopObj!.website = shop["website"].stringValue
+            shopObj!.phone = shop["phone"].stringValue
+        }
+        
+        // Stays
+        for shop in json["Stays"].arrayValue{
+            let stayObj = StayMO(managedObjectContext: self.managedObjectContext)
+            stayObj!.name = shop["name"].stringValue
+            stayObj!.address = shop["address"].stringValue
+            stayObj!.website = shop["website"].stringValue
+            stayObj!.phone = shop["phone"].stringValue
+        }
+        
         
     }
     
@@ -40,15 +59,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
                 let data = try NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMapped)
                 
-                let jsonData = JSON(data)
-                print (jsonData)
                 do{
                 let jsonResult = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers)
-                    print(jsonResult)
+                    print("JSON serialization succeeded!")
+                    //createObjects(jsonResult)
                 } catch {
                     print("JSON serialization failed")
                 }
-                
                 
             } catch {
                 print("Could not load level file")

@@ -10,6 +10,7 @@ public enum EatMOAttributes: String {
     case phone = "phone"
     case rating = "rating"
     case type = "type"
+    case website = "website"
 }
 
 public class _EatMO: NSManagedObject {
@@ -54,6 +55,9 @@ public class _EatMO: NSManagedObject {
 
     @NSManaged public
     var type: String?
+
+    @NSManaged public
+    var website: String?
 
     // MARK: - Relationships
 

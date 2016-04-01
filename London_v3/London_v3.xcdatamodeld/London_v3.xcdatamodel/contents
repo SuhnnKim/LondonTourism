@@ -7,6 +7,7 @@
         <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="rating" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Event" representedClassName="EventMO" syncable="YES">
         <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
@@ -21,6 +22,7 @@
         <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="rating" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Stay" representedClassName="StayMO" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
@@ -29,11 +31,12 @@
         <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="rating" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Eat" positionX="-63" positionY="-18" width="128" height="135"/>
-        <element name="Shop" positionX="-54" positionY="36" width="128" height="135"/>
-        <element name="Stay" positionX="-36" positionY="72" width="128" height="135"/>
+        <element name="Eat" positionX="-63" positionY="-18" width="128" height="150"/>
         <element name="Event" positionX="-18" positionY="99" width="128" height="105"/>
+        <element name="Shop" positionX="-54" positionY="36" width="128" height="150"/>
+        <element name="Stay" positionX="-36" positionY="72" width="128" height="150"/>
     </elements>
 </model>
