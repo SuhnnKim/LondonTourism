@@ -39,8 +39,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             do{
                 
                 let data = try NSData(contentsOfFile: path, options: NSDataReadingOptions.DataReadingMapped)
+                
                 let jsonData = JSON(data)
-                print(jsonData)
+                print (jsonData)
+                do{
+                let jsonResult = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers)
+                    print(jsonResult)
+                } catch {
+                    print("JSON serialization failed")
+                }
+                
                 
             } catch {
                 print("Could not load level file")

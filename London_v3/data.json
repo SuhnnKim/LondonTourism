@@ -97,7 +97,7 @@
               "phone": "(519) 679-1030"
               }
               
-    ],//shops ends
+    ],
     "Stays": [
               {
               "name": "Delta London Armouries",
@@ -205,6 +205,6 @@
               "phone": "(519) 668-7900"
               }
     
-    ],//stays ends
+    ],
     "dataTitle": "London Data"
 }
