@@ -69,6 +69,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 shopObj!.website = shop["website"].stringValue
                 shopObj!.phone = shop["phone"].stringValue
             }
+            do {
+                try self.managedObjectContext.save()
+            } catch _ {
+            }
         }
         
         // Stays
@@ -80,6 +84,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 stayObj!.website = shop["website"].stringValue
                 stayObj!.phone = shop["phone"].stringValue
             }
+            do {
+                try self.managedObjectContext.save()
+            } catch _ {
+            }
         }
     }
     
@@ -90,7 +98,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let results = try? self.managedObjectContext.executeFetchRequest(fetchRequest)
         
         if results != nil {
+            print(entityName + " entity exist")            
             return (results!.count > 0)
+        }else{
+            print(entityName + " entity needs to be created")
         }
         
         return false
